@@ -1,0 +1,13 @@
+import numpy as np
+from scipy.io.wavfile import write
+
+Fs = 8192  # tần số lấy mẫu
+t = np.linspace(0, 2, 2*Fs, endpoint=False)  # 2 giây
+freq = 440  # tần số A4 (nốt La)
+x = 0.5 * np.sin(2 * np.pi * freq * t)
+
+# chuyển sang 8-bit (giống đề bài)
+x8 = np.int8(x * 127)
+
+write("handel.wav", Fs, x8)
+print("Đã tạo file handel.wav giả định")

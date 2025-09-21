@@ -1,0 +1,11 @@
+Bài 6: Bài toán này sử dụng tệp âm thanh “handel” có sẵn trong MATLAB. 
+Âm thanh này được lấy mẫu với tần số Fs = 8192 mẫu/giây và độ phân giải 8 bit mỗi mẫu.
+
+(a) Nạp sóng âm thanh “handel” vào một mảng x và nghe lại bằng hàm sound với tần số lấy mẫu đầy đủ.
+
+(b) Chọn mỗi mẫu cách một trong x, điều này sẽ giảm tần số lấy mẫu đi một nửa.
+     Sau đó nghe lại mảng âm thanh mới bằng hàm sound với tần số lấy mẫu bằng một nửa.
+
+(c) Chọn mỗi mẫu cách ba (tức là giữ lại 1 trong 4 mẫu) trong x, điều này sẽ giảm tần số lấy mẫu đi một phần tư. Sau đó nghe lại mảng âm thanh kết quả bằng hàm sound với tần số lấy mẫu bằng một phần tư.
+
+(d) Lưu lại âm thanh đã tạo ở phần (c) bằng hàm wavwrite.
